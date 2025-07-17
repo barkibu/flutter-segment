@@ -38,6 +38,12 @@ android {
         coreLibraryDesugaringEnabled true
     }
 
+    buildTypes {
+        release {
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
     lintOptions {
         disable 'InvalidPackage'
     }
